@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div style="background-color:lightgrey">
+<h1 style="text-align:center;background-color:grey">Welcome to FINRA Document Management</h1>
+
+<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+	<table>
+	<tbody>
+		<tr>
+			<td style="width:130px">File Name</td>
+			<td ><input type="text" name="fileName" id="fileName"/></td>
+		</tr>
+		<tr>
+			<td style="width:100px">File Type</td>
+			<td ><input type="text" name="fileType" id="fileType" /></td>
+		</tr>
+		<tr>
+			<td style="width:100px">File Owner</td>
+			<td ><input type="text" name="fileOwner"  id="fileOwner"/></td>
+		</tr>
+		<tr>
+			<td style="width:100px">File Description</td>
+			<td ><input type="text" name="fileDescription" id="fileDescription"/></td>
+		</tr>
+		<tr>
+			<td style="width:100px">Select the File</td>
+			<td ><input type="file" name="file" id="file" /></td>
+		</tr>
+		<tr>
+			<td style="width:100px"></td>
+			<td ><input type="submit" value="Submit" id="btnSubmit"/></td>
+		</tr>
+	</tbody>
+	</table>	  
+</form>
+<h1>Process Result</h1>
+<pre>
+    <span id="result"></span>
+</pre>
+<h1><div style="text-align: center" id="uploadedFiles"></div></h1>
+<ul id="ul"></ul>
+<h4 style="text-align:center;background-color:grey">Thank you</h4>
+</div>
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

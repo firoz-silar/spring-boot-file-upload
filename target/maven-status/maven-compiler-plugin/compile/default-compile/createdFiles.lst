@@ -1,0 +1,6 @@
+com\SpringBootWebApplication.class
+com\controller\FileUploadController.class
+com\controller\IndexController.class
+com\exception\RestGlobalExceptionHandler.class
+com\repository\Repository.class
+com\exception\CustomError.class
